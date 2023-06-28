@@ -36,6 +36,10 @@ nav{
     font-size: 20px;
 }
 
+.nav-item {
+    margin: 5px 0 5px 0;
+}
+
 .navbar-link{
     margin: 5px 20px 5px 20px;
     text-decoration: none;
@@ -262,4 +266,9 @@ nav{
 .about-heading span{
     color: #6e00ff;
     font-size: 25px;
+}
+
+.about-content{
+    text-align: left;
+    padding: 20px;
 }
