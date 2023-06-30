@@ -108,7 +108,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    padding: 20px 80px 20px 80px;
+    padding: 20px 70px 20px 70px;
  }
 
  .top-section-left{
@@ -128,41 +128,6 @@ nav{
     text-align: justify;
     /* decoration */
     color: rgb(134, 134, 134) ;
- }
-
- @media (max-width: 920px) {
-    .top-section-left{
-        font-size: 40px;
-    }
- }
-
- @media (max-width: 780px) {
-    .top-section-left{
-        font-size: 35px;
-        width: 70%;
-        padding-right: 20px;
-    }
-    .top-section-right{
-        font-size: 15px;
-        width: 30%;
-    }
- }
-
- @media (max-width: 550px) {
-    .top-section-left{
-        font-size: 35px;
-        width: 100%;
-        padding-right: 0;
-    }
-    .top-section-right{
-        margin-top: 15px;
-        font-size: 12px;
-        width: 100%;
-    }
-    .top-section{
-        padding: 20px 15px;
-        margin: 10px;
-    }
  }
 
  .tag-line,
@@ -217,50 +182,29 @@ nav{
 /* ---------------------------------------------------------- */
 
 .about-us-section{
-    margin: 50px 0 50px 0;
+    padding: 70px;
     width: 100%;
-    text-align: center;
+    background-color:  rgba(146, 146, 146, 0.062);
 }
 
-.left-separator, 
-.right-separator{
-    width: 35%;
-    border: 0.1px solid gray;
-    margin: 6px;    
-    display: inline-block;
+.about-content{
+    width: 100%;
+    color: rgb(99, 99, 99);
+    display:flex;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
-    .left-separator, 
-    .right-separator {
-        width: 33%;
-    }
+.grey{
+    color: rgb(99, 99, 99);    
 }
 
-@media (max-width: 680px) {
-    .left-separator, 
-    .right-separator {
-        width: 30%;
-    }
-}
-
-@media (max-width: 560px) {
-    .left-separator, 
-    .right-separator {
-        width: 25%;
-    }
-}
-
-@media (max-width: 430px) {
-    .left-separator, 
-    .right-separator {
-        width: 20%;
-    }
+.about-text{
+    width: 60%;
 }
 
 .about-heading{
-    display: inline-block;
     font-weight: bolder;
+    line-height: 15px;
 }
 
 .about-heading span{
@@ -268,7 +212,97 @@ nav{
     font-size: 25px;
 }
 
-.about-content{
-    text-align: left;
-    padding: 20px;
+.underline{
+    width: 70px;
+    height: 1px;
+    border-radius: 10px;
+    border: 2px solid #6e00ff;
 }
+
+.brand-name-1-small {
+    color: #6e00ff;
+}
+
+.brand-name-2-small,
+.black {
+    color: black;
+}
+
+.job-card{
+    width: 40%;
+    /* margin-top: -50px; */
+}
+
+.job-card-image{
+    width: 80%;
+    margin: 0 0 0 50px;
+}
+
+.accordion-item .accordion-button, .accordion-body {
+    background-color: rgba(146, 146, 146, 0.062) !important;
+  }
+
+  .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+.acc-icon{
+    background-color: #6f00ff44;
+    color: #6e00ff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.fa-caret-down{
+    position: absolute;
+    right: 20px;
+}
+
+/* -----------------------------------------------------------MEDIA QURIES */
+@media (max-width: 920px) {
+    .top-section-left{
+        font-size: 40px;
+    }
+
+    .job-card-image{
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 780px) {
+    .top-section-left{
+        font-size: 35px;
+        width: 70%;
+        padding-right: 20px;
+    }
+    .top-section-right{
+        font-size: 15px;
+        width: 30%;
+    }
+ }
+
+ @media (max-width: 550px) {
+    .top-section-left{
+        font-size: 35px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .top-section-right{
+        margin-top: 15px;
+        font-size: 12px;
+        width: 100%;
+    }
+    .top-section{
+        padding: 20px 15px;
+        margin: 10px;
+    }
+    .about-us-section{
+        padding: 25px;
+    }
+ }
