@@ -199,6 +199,7 @@ nav{
 }
 
 .about-text{
+    text-align: justify;
     width: 60%;
 }
 
@@ -230,7 +231,9 @@ nav{
 
 .job-card{
     width: 40%;
-    /* margin-top: -50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .job-card-image{
@@ -285,6 +288,28 @@ nav{
         font-size: 15px;
         width: 30%;
     }
+    .job-card{
+        width: 50%;
+    }
+    .about-text{
+        width: 50%;
+    }
+ }
+
+ @media (max-width: 690px) {
+    .about-content{
+        flex-direction: column-reverse;
+    }
+    .job-card-image{
+        width: 70%;
+        margin: 0;
+    }
+    .job-card{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
+    }
  }
 
  @media (max-width: 550px) {
@@ -304,5 +329,8 @@ nav{
     }
     .about-us-section{
         padding: 25px;
+    }
+    .job-card-image{
+        width: 80%;
     }
  }
