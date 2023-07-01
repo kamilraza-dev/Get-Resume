@@ -255,7 +255,7 @@ nav{
   }
 
 .acc-icon{
-    background-color: #6f00ff15;
+    background-color: #6f00ff0a;
     color: #6e00ff;
     padding: 8px;
     border-radius: 5px;
@@ -265,7 +265,7 @@ nav{
 .fa-caret-down{
     position: absolute;
     right: 20px;
-    background-color: #6f00ff15;
+    background-color: #6f00ff0a;
     color: #6e00ff;
     border-radius: 5px;
     padding: 8px 12px 8px 12px;
