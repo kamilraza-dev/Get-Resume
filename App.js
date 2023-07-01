@@ -1,145 +1,177 @@
+const contentArea = document.getElementById('all-content');
 
-function createTest(testNo, day, date, sub, topics){
-    const testList = document.getElementById('test-list');
+function HomePageDesign() {
+    contentArea.innerHTML = `
+    <section class="top-section">
+                <div class="top-section-left">
+                  <div class="tag-line">
+                    The Best <span class="color-purple">#Free</span> Resume Builder
+                  </div>
+                  Get a Job-Ready Resume in Minutes for Free!
+                </div>
+                <div class="top-section-right">
+                  Build your resume the easy way – for free! Our builder offers a wide selection of attractive templates to make your resume shine  
+                    <button class="btn-build" onclick="createResume()">
+                      Build My Resume
+                    </button>
+                </div>
+          </section>
+      
+          <section class="about-us-section" id="about-section">
+              <h2 class="about-heading">
+                Mission <span>&</span> Vision
+              </h2>
+              <div class="underline"></div>
+              <br>
+              <div class="grey">
+                <span class="brand-name-1-small"> Get</span><span class="brand-name-2-small">Resume</span> : <span class="black">Crafting Your Path to Success</span> <br> <br>
+                  Welcome to <span class="black">GetResume</span>, where creating professional resumes is effortless. Showcase your skills and accomplishments with confidence in today's competitive job market. <br>
+                  
+              </div>
 
-    const singleTest = `<li>
-        <h3>
-            ${testNo}
-        </h3>
-        <ul>
-            <li>Day: <span class="blue">${day}</span></li>
-            <li>Date: <span class="blue">${date}</span></li>
-            <li>Subject: <span class="blue"><b>${sub}</b></span></li>
-            <li>Topics: <span class="blue">${topics}</span></li>
-        </ul>
-    </li>`
-    testList.innerHTML += singleTest;
+              <div class="about-content">
+                  <div class="about-text">
+                    <br>
+                    Discover our user-friendly resume building platform at <span class="black">GetResume</span>. Leverage cutting-edge technology and industry expertise to tailor your standout resume, whether you're a recent graduate, seasoned professional, or career changer.
+                  <br><br>
+                    At <span class="black">GetResume</span>, we empower individuals on their career journeys. Our free resume builder provides equal opportunities for professional growth. Let us be your partner in crafting a compelling resume that opens doors to exciting opportunities.
+                    <h5><b>Key Features:</b></h5>
+
+                  <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">                          
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <b><i class="fas fa-tools acc-icon"></i>Easy-to-use Interface</b><i class="fas fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body grey">
+                            Our intuitive interface allows you to create your resume in a hassle-free manner. No technical expertise required – simply fill in the necessary information, choose from our diverse range of professional templates, and let our platform do the rest.
+                          </div>
+                      </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <b><i class="fas fa-tools acc-icon "></i>Customization Options</b><i class="fas fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body grey">
+                            We believe in the power of personalization. With our wide selection of templates, fonts, colors, and layouts, you can customize your resume to reflect your individual style and professional branding. Stand out from the crowd and make a lasting impression.                        
+                          </div>
+                      </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <b><i class="fas fa-tools acc-icon"></i>Automatic Formatting</b><i class="fas fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body grey">
+                            Say goodbye to the frustration of manual formatting. Our intelligent platform takes care of the formatting, ensuring that your resume appears polished and professional every time. Focus on the content while we handle the design.                      
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                
+                </div>
+                
+                <div class="job-card">
+                  <img src="./assets/images/job-card.png" alt="Job Card.png" class="job-card-image">
+                </div>
+              </div>  
+          </section>`
 }
 
-function displayClassNine(){
+HomePageDesign();
 
-    const downloadBtn10 = document.getElementById('download-button-10');
-    downloadBtn10.style.display = 'none'
-    const tableContainer = document.getElementById('table-container-10');
-    tableContainer.innerHTML = '';
+function AboutSectionDesign(){
+  contentArea.innerHTML = `
+  <section class="about-us-section" id="about-section">
+              <h2 class="about-heading">
+                Mission <span>&</span> Vision
+              </h2>
+              <div class="underline"></div>
+              <br>
+              <div class="grey">
+                <span class="brand-name-1-small"> Get</span><span class="brand-name-2-small">Resume</span> : <span class="black">Crafting Your Path to Success</span> <br> <br>
+                  Welcome to <span class="black">GetResume</span>, where creating professional resumes is effortless. Showcase your skills and accomplishments with confidence in today's competitive job market. <br>
+                  
+              </div>
 
-    const downloadBtn9 = document.getElementById('download-button-9');
-    downloadBtn9.style.display = 'block'
+              <div class="about-content">
+                  <div class="about-text">
+                    <br>
+                    Discover our user-friendly resume building platform at <span class="black">GetResume</span>. Leverage cutting-edge technology and industry expertise to tailor your standout resume, whether you're a recent graduate, seasoned professional, or career changer.
+                  <br><br>
+                    At <span class="black">GetResume</span>, we empower individuals on their career journeys. Our free resume builder provides equal opportunities for professional growth. Let us be your partner in crafting a compelling resume that opens doors to exciting opportunities.
+                    <h5><b>Key Features:</b></h5>
 
-    const timeTable = document.getElementById('table-container-9');
-    timeTable.innerHTML = `<table>
-    <tr>
-        <th>DAY</th>
-        <th>DATE</th>
-        <th>SUBJECT</th>
-        <th>TOPIC</th>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>03-07-2023</td>
-        <td>Physics</td>
-        <td class="last-cell">Chap#1 (Complete), Chap#2 (only equations of motion)</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>05-07-2023</td>
-        <td>Physics</td>
-        <td class="last-cell">Chap#2 (All Remaning) with Numericals, Chap#3 (Complete)</td>
-    </tr>
-    <tr>
-        <td>Friday</td>
-        <td>07-07-2023</td>
-        <td>Grammar</td>
-        <td class="last-cell">Articles and Do as Directed (All Tenses)</td>
-    </tr>
-    <tr>
-        <td>Saturday</td>
-        <td>08-07-2023</td>
-        <td>Chemistry</td>
-        <td class="last-cell">Chap#2 (All covered topics)</td>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>10-07-2023</td>
-        <td>Mathematics</td>
-        <td class="last-cell">Chap#1 (Exercise#1.6 [Q4 and 5] ), Chap#2 (Exercise#2.6)</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>12-07-2023</td>
-        <td>Mathematics</td>
-        <td class="last-cell">Chap#2 (remaining), Chap#6 (All covered topics)</td>
-    </tr>
-    <tr>
-        <td>Friday</td>
-        <td>14-07-2023</td>
-        <td>Chemistry</td>
-        <td class="last-cell">Chap#1 (Complete) with Numericals</td>
-    </tr>
-</table>`
+                  <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">                          
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <b><i class="fas fa-tools acc-icon"></i>Easy-to-use Interface</b><i class="fas fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body grey">
+                            Our intuitive interface allows you to create your resume in a hassle-free manner. No technical expertise required – simply fill in the necessary information, choose from our diverse range of professional templates, and let our platform do the rest.
+                          </div>
+                      </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <b><i class="fas fa-tools acc-icon "></i>Customization Options</b><i class="fas fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body grey">
+                            We believe in the power of personalization. With our wide selection of templates, fonts, colors, and layouts, you can customize your resume to reflect your individual style and professional branding. Stand out from the crowd and make a lasting impression.                        
+                          </div>
+                      </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <b><i class="fas fa-tools acc-icon"></i>Automatic Formatting</b><i class="fas fa-caret-down"></i>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body grey">
+                            Say goodbye to the frustration of manual formatting. Our intelligent platform takes care of the formatting, ensuring that your resume appears polished and professional every time. Focus on the content while we handle the design.                      
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                
+                </div>
+                
+                <div class="job-card">
+                  <img src="./assets/images/job-card.png" alt="Job Card.png" class="job-card-image">
+                </div>
+              </div>  
+          </section>`
 }
 
-function displayClassTen(){
-    const downloadBtn10 = document.getElementById('download-button-10');
-    downloadBtn10.style.display = 'block'
-
-    const downloadBtn9 = document.getElementById('download-button-9');
-    downloadBtn9.style.display = 'none'
-    const timeTable = document.getElementById('table-container-9');
-    timeTable.innerHTML = '';
-
-    const tableContainer = document.getElementById('table-container-10');
-    tableContainer.innerHTML =  `<table>
-    <tr>
-        <th>DAY</th>
-        <th>DATE</th>
-        <th>SUBJECT</th>
-        <th>TOPIC</th>
-    </tr>
-    <tr>
-        <td>Monday</td>
-        <td>03-07-2023</td>
-        <td>Mathematics</td>
-        <td class="last-cell">Chap#3 (Complete)</td>
-    </tr>
-    <tr>
-        <td>Tuesday</td>
-        <td>04-07-2023</td>
-        <td>Chemistry</td>
-        <td class="last-cell">All covered topics</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>05-07-2023</td>
-        <td>Physics</td>
-        <td class="last-cell">All covered topics</td>
-    </tr>
-    </table>`;
-
+function createResume(){
+    contentArea.innerHTML = `<div class="create-resume-section" id="create-resume-section">
+    <div class="category">
+    <button class="category-btn"><i class="fas fa-user info-icons"></i>Personal Information</button>
+    <button class="category-btn"><i class="fas fa-book info-icons"></i>Education</button>
+    <button class="category-btn"><i class="fas fa-tools info-icons"></i>Skills</button>
+    <button class="category-btn"><i class="fas fa-book info-icons"></i>Expirence</button>
+    <button class="category-btn"><i class="fas fa-book info-icons"></i>Language</button>
+    <button class="category-btn"><i class="fas fa-book info-icons"></i>Social Accounts</button>
+  </div> 
+    </div> `
 }
-
-function downloadTable9() {
-    const table = document.getElementById('table-container-9');
-    const opt = {
-        margin: 1,
-        filename: 'Timetable Class 9.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
-    html2pdf().set(opt).from(table).save();
-}
-
-function downloadTable10() {
-    const table = document.getElementById('table-container-10');
-    const opt = {
-        margin: 1,
-        filename: 'Timetable Class 10.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
-    html2pdf().set(opt).from(table).save();
-}
-
-
