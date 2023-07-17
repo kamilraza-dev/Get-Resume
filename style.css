@@ -6,13 +6,19 @@
     font-size: 14px;
 }
 
+.html {
+    scroll-behavior: auto !important;
+  }  
+
 ::-webkit-scrollbar{
     display: none;
 }
 
 nav{
-    position: sticky;
-    top: 0;
+    position: sticky !important;
+    z-index: 10;
+    background-color: #fff;
+    top: 45px;
     box-shadow: 0px 0px 3px;
 }
 
@@ -44,9 +50,8 @@ nav{
     margin: 5px 20px 5px 20px;
     text-decoration: none;
     color: rgb(82, 82, 82) ;
-    /* color: black; */
     font-weight: 500;
-
+    cursor: pointer;
 }
 
 .navbar-link:hover{
@@ -168,6 +173,7 @@ nav{
 
  .btn-build:hover{
     transition: 400ms;
+    transform: scale(0.9);  
     border: 2px solid #6e00ff;
     background-image: none;
     background-color: white;
@@ -275,66 +281,112 @@ nav{
 /* ------------------------------------------------------------CREATE RESUME SECTION */
 .create-resume-section {
     width: 100%;
-    height: 100%;
-    padding: 50px;
     background-color: rgba(146, 146, 146, 0.082);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.category {
-    width: 250px;
-    height: auto;
+.details-container {
+    width: 34%;
+    margin-left: 5px;
+    /* border: 2px solid red; */
+}
+
+.details-panel {
+    width: 100%;
+    margin: 5px;
+    padding: 10px 20px ;
     background-color: white;
-    border-radius: 30px;
-    padding: 1px 10px;
-    text-align: center;
-
-}
-
-.category-btn {
-    height: 50px;
-    width: 230px;
-    border-radius: 25px;
-    border: none;
-    background-color: white;
-    box-shadow: 0 0 3px grey;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 15px 25px 15px 25px;
-}
-
-.category-btn:hover {
-    box-shadow: 0 0 3px 1px grey;
-}
-
-.info-icons {
-    padding-right: 10px;
-}
-
-/* .field-div {
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.267);
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    align-items: center;
 }
 
-label {
-    margin-left: 5px;
+.panel-heading {
+    margin-bottom: 20px;
 }
 
-.input-field {
-    margin: 5px 0 5px 0;
-    width: 200px;
-    border-radius: 16px;
-    outline: none;
-    border: 1.5px solid grey;
-    padding: 10px 13px 10px 13px;
+.details-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.input-field:focus {
-    transition: 300ms;
-    border: 1.5px solid #6e00ff;
-    box-shadow: 0 0 4px #6e00ff;
-} */
+.input-field-area{
+    margin: 5px;
+}
 
+.details-input {
+    font-size: 11px !important;
+    width: 90%;
+    margin: 5px 0px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.cv-display{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    width: 8.27in;
+    height: 11.69in;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid black;
+    display: flex;
+
+}
+
+.holder-name {
+    font-size: 50px;
+}
+
+.title {
+    font-size: 14px;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.social-acc {
+    position: absolute;
+    bottom: 0;
+}
+.social-icon {
+    font-size: 25px;
+}
+
+.input-area {
+    padding: 5px;
+}
+
+.input-area label {
+    font-size: 13px;
+}
+
+.details-input-field {
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.under-const {
+    text-align: center;
+    color: rgb(200, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.under-const > h6 {
+    font-size: 14px;
+}
 /* -----------------------------------------------------------MEDIA QURIES */
 @media (max-width: 920px) {
     .top-section-left{
@@ -343,6 +395,14 @@ label {
 
     .job-card-image{
         width: 100%;
+    }
+
+    .category-item {
+        display: none;
+    }
+
+    .details-container {
+        width: 60%;
     }
  }
 
@@ -401,11 +461,20 @@ label {
     .job-card-image{
         width: 80%;
     }
+    .details-container {
+        width: 80%;
+    }
  }
 
  @media (min-width: 550px) and (max-width: 685px){
     .btn-build {
         width: 170px;
         height: 50px;
+    }
+ }
+
+ @media (max-width: 375px) {
+    .details-container {
+        width: 90%;
     }
  }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@500&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/icon-head.png" type="png">
+    <title>GetResume - The Top Resume Builder</title>
+</head>
+<body>
+    <div class="under-const">
+        <h6>
+          <i class="fas fa-tools"></i>
+          Our Website is UnderConstruction
+        </h6>
+      </div>
+    <!-- NAV BAR START-->
+    <nav class="navbar navbar-expand-lg " id="nav-bar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/images/logo.png" alt="logo" class="logo" width="150px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="navbar-link" href="./index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-link"  href="./index.html#about-section">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./createResumeSection.html"><button class="navbar-link create-btn" >Create Resume</button></a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <span class="nav-btn">
+                <a href="https://www.linkedin.com/in/kamilraza-dev/" target=_blank><button class="btn-main" type="submit">Let's Connect</button></a>
+              </span>
+            </div>
+          </div>
+    </nav>
+      <!-- NAV BAR END -->
+    <div id="resume-creating-conatiner">
+        <div class="create-resume-section" id="create-resume-section">
+       
+            <!-- RESUME DETAILS -->
+            <div class="details-container">
+                <!-- PERSONAL INFO -->
+                <div class="details-panel">
+                  <h5 align="center" class="panel-heading">PERSONAL INFORMATION</h5>
+                  <form action="" class="details-form">
+                    <div class="input-field-area">
+                      <label for="name">Full Name:</label><br>
+                    <input type="text" name="" id="name" class="details-input" placeholder="John Doe">
+                    </div>
+  
+                    <div class="input-field-area">
+                      <label for="lname">Title:</label><br>
+                      <input type="text" name="" id="title" class="details-input" placeholder="e.g. Developer, Designer..">
+                    </div>
+  
+                    <div class="input-field-area">
+                      <label for="address">Address:</label><br>
+                      <input type="text" name="" id="address" class="details-input" placeholder="Street 101, xyz town">
+                    </div>
+  
+                    <div class="input-field-area">
+                      <label for="city">City</label><br>
+                      <input type="text" name="" id="city" class="details-input" placeholder="Your City">
+                    </div>
+  
+                    <div class="input-field-area">
+                      <label for="phone">Phone</label><br>
+                      <input type="text" name="" id="phone" class="details-input" placeholder="+92 325 2355112">
+                    </div>
+  
+                    <div class="input-field-area">
+                      <label for="mail">Email Address</label><br>
+                      <input type="text" name="" id="mail" class="details-input" placeholder="example@gmail.com">
+                    </div>
+                  </form>
+                </div>
+                <!-- EDUCATION -->
+                <div class="details-panel" >                
+                  <h5 align="center" class="panel-heading">EDUCATION</h5>
+  
+                  <form details>
+                    <table>
+                      <tr>
+                        <td class="input-area">
+                          <label for="degree-name">Degree Major:</label><br>
+                          <input type="text" id="degree-name" class="details-input-field" placeholder="BS Computer Science">
+                        </td>
+                        <td class="input-area">
+                          <label for="city">City:</label><br>
+                          <input type="text" id="city" class="details-input-field" placeholder="Your City">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="input-area" colspan="2">
+                          <label for="institute-name">Institute:</label><br>
+                          <input type="text" id="institute-name" class="details-input-field" placeholder="XYZ institute of Technology">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="input-area">
+                          <label for="degree-start-date">Start Date:</label><br>
+                          <input type="text" id="degree-start-date" class="details-input-field" placeholder="e.g. 2017">
+                        </td>
+                        <td class="input-area">
+                          <label for="degree-end-date">End Date:</label><br>
+                          <input type="text" id="degree-end-date" class="details-input-field" placeholder="e.g. 2021">
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+                <div class="details-panel" >                
+                  <h5 align="center" class="panel-heading">SKILLS</h5>
+                </div>
+                <div class="details-panel">                
+                  <h5 align="center" class="panel-heading">EXPERIENCE</h5>
+                </div>
+                <div class="details-panel">                
+                  <h5 align="center" class="panel-heading">LANGUAGES</h5>
+                </div>
+                <div class="details-panel">                
+                  <h5 align="center" class="panel-heading">SOCIAL ACCOUNTS</h5>
+                </div>
+              </div>
+                
+              <div class="cv-display" id="cv-display">
+                
+              </div>
+              </div> 
+      </div>
+</body>
+</html>
