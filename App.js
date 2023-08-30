@@ -27,7 +27,7 @@ function NavBar(){
                     <a href="./createResumeSection.html"><button class="navbar-link create-btn" >Create Resume</button></a>
                   </li>
                   <li class="nav-item">
-                    <a class="navbar-link" href="#contact">Contact</a>
+                    <a class="navbar-link" href="mailto:m.kamilrazabhatti@gmail.com">Contact</a>
                   </li>
                 </ul>
                 <span class="nav-btn">
